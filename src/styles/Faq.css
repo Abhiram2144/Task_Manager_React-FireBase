@@ -1,0 +1,44 @@
+
+.num-03 p{
+    color:#DDBF1B;
+    font-size:75px;
+    position:absolute;
+    right: 20px;
+    top: 100px;
+}
+.heading-1{
+    margin-top:100px;
+    margin-bottom:50px;
+    margin-left: 100px;
+}
+.heading-1 h1{
+    font-size:3rem;
+}
+.what-is{
+    margin-bottom:50px;
+    margin-left: 100px;
+}
+.what-is h1{
+    font-size:2rem;
+}
+
+.lowersection{
+    /* margin-left: 100px; */
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background-color: #DDBF1B;
+    border-radius: 20px;
+}
+.grid-div {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:50px;
+    
+}
+.grid-div h1{
+    font-size:1.5rem;
+    color: black;
+}
+.grid-div p{
+    color: black;
+}

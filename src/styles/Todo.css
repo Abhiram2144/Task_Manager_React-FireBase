@@ -1,0 +1,143 @@
+.num-05{
+    font-size: 60px;
+    position:absolute;
+    left: 30px;
+    top: 100px;
+    color: #DDBF1B;
+}
+
+.todo-space-heading{
+    margin-left:100px;
+    margin-top:100px;
+}
+.todo-space-heading h1{
+    font-size: 3rem;
+}
+.todo-list input{
+    z-index: 999999;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align:center;
+}
+
+.top-contents{
+    display: flex;
+    left:500px;
+    position: absolute;
+    align-items: center;
+}
+
+.top-contents button{
+    position: relative;
+    top:3.60rem;
+}
+
+.top-contents #add-to-db{
+    margin-right: 1rem;
+}
+
+#database-data{
+    position: absolute;
+    left:40%;
+    top:60%;
+    /* margin-bottom: 500px; */
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right:9rem;
+    margin-bottom: 10px;
+}
+
+
+#comp-box{
+    margin-left:2rem;
+    position: relative;
+    height: 22px;
+    width: 22px;
+    margin-top:4px;
+}
+#comp-box:hover{
+    cursor: pointer;
+}
+
+.data h3{
+    font-size:2rem;
+}
+
+#task-id{
+    margin-left:4rem;
+    margin-right: 4rem;
+}
+
+
+/* Input css */
+
+.input {
+    background-color: #383838;
+    border: 1ex solid none;
+    border-top-width: 1.7em;
+    margin: 0;
+    padding: 0;
+    color: #383838;
+    word-wrap: break-word;
+    outline: 7px solid #383838;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    transition: all 1s;
+    max-width: 290px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 99999999;
+    position:relative;
+    margin-right:20px;
+    top: 10px;
+   }
+   
+   .input:hover {
+    border-top-width: 0.2em;
+    background-color: #f1e8e8;
+   }
+   
+   .input:focus {
+    border-top-width: 0.2em;
+    background-color: #f1e8e8;
+   }
+
+/* Check Box CSS  */
+
+.check-cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .check-cont {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .check-cont svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+    fill: #666;
+  }
+  
+  .check-cont svg:hover {
+    transform: scale(1.1);
+  }
+  
+  .check-cont input:checked ~ svg {
+    fill: #ffeb49;
+  }
+  

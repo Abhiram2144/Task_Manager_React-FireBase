@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.num-04{
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    font-size: 75px;
+    color: #DDBF1B;
+}
+
+
+.team-name h1{
+    font-size: 2rem;
+}
+
+.main-content{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.main-content h1{
+    font-size:3rem;
+}
+.heart{
+    color:#DDBF1B;
+}
+
+.lower{
+    margin-top: 60px;
+    margin-left:400px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.name:focus{
+    color: aliceblue;
+}
+
+.left-block{
+    width: fit-content;
+    background-color: #DDBF1B;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    border-radius: 20px;
+    padding-right: 50px;
+    
+}
+.left-block ul{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left-block a{
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+}
+
+.left-block a:hover{
+    color: white;
+}
+
+.left-block li{
+    margin-bottom: 50px;
+    font-size: 2rem;
+    z-index:99999;
+    color: black;
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+.left-block li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.left-block li:focus{
+    color: white;
+}
+
+.right-block{
+    background-color: black;
+    height: 470px;
+    width: 500px;
+    margin-right: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#person-img{
+    height:300px;
+    margin-top:30px;
+}
+
+#person-email{
+    margin-top: 50px;
+}
+
+
+/* loader  */
+
+#loadir{
+    margin-left:700px;
+    margin-top:350px;
+}
+
+.wrapper {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #DDBF1B;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  

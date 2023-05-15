@@ -1,0 +1,30 @@
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color:#E8E6E3;
+    
+}
+
+.head-title{
+    font-size: 60px;
+}
+
+.head-cont{
+    margin-bottom: 20px;
+}
+
+.description-line
+{
+    margin-bottom: 10px;
+}
+
+.combined-title{
+    display:flex;
+    flex-direction: column;
+}
+
+.description{
+    padding-left: 50px;
+}

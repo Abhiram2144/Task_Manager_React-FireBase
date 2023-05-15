@@ -1,0 +1,32 @@
+footer{
+    color: #E8E6E3;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height:2rem;
+    right: 50%;
+    transform: translate(50%);
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    font-size: 1rem;
+}
+
+.clg{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.branch{
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+}
+a:hover{
+cursor:pointer;
+}
