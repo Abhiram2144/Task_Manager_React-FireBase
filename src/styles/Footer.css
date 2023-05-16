@@ -22,11 +22,26 @@ h1{
     left: 50%;
     transform: translate(-50%);
 }
-.branch{
+#bgm:hover{
+cursor: pointer;
+}
+
+/* .branch{
     position: absolute;
     right: 0;
     padding-right: 30px;
+} */
+
+.branch {
+    justify-content: end;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
+#bgm {
+    all: unset;
+}
+
 a:hover{
 cursor:pointer;
 }
