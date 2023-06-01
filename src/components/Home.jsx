@@ -8,14 +8,14 @@ function Home() {
         <div className='container'>
 
         <div className='head-cont'>
-          <p style={{display:'flex', flexDirection:'row'}}> <p style={{fontSize:40, color:'#DDBF1B'}}>00</p>  <h1 className='head-title' style={{textIndent:24}}>TODO-SPACE</h1></p>
+          <p style={{display:'flex', flexDirection:'row'}}> <p className='num-00' >00</p>  <span className='head-title' style={{textIndent:24}}>TODO-SPACE</span></p>
         </div>
 
         <div className='description'>
-            <p style={{textIndent:0}} className='description-line'>Perfection needs Discipline. And Discipline needs?</p>
-            <p style={{textIndent:40}} className='description-line'>In order to be successfull, one should have discipline </p>
-            <p style={{textIndent:80}} className='description-line'>Our goal is to provide you what it takes to be successfull</p>
-            <p style={{textIndent:120}} className='description-line'>Todo Space is the one of the best Task Manager out there!</p>
+            <p className='description-line md-lg'>Perfection needs Discipline. And Discipline needs?</p>
+            <p  className='description-line md-lg'>In order to be successfull, one should have discipline </p>
+            <p className='description-line'>Our goal is to provide you what it takes to be successfull</p>
+            <p className='description-line'>Todo Space is the one of the best Task Manager out there!</p>
         </div>
         </div>
        

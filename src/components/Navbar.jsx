@@ -13,6 +13,9 @@ import{
 
 import { Link } from 'react-router-dom';
 function Navbar() {
+
+
+  
   const navigate = useNavigate();
   const todooption = document.querySelectorAll(".logged-in");
   const signinoption = document.querySelectorAll('.logged-out');
@@ -75,50 +78,68 @@ auth.onAuthStateChanged(user=>{
   };
 
   const soundfun = () =>{
-    
     audio.play();
   }
+
+  
+
 
   return (
     <div>
       <nav className='nav-comp' style={{zIndex:999999}}>
-        <div style={{zIndex:999999}}>
-          <a href="/"><img src={logo} alt="" className='logo-img'/></a>
+        <div style={{zIndex:999999}} id='logo-div'>
+          <Link to="/"><img src={logo} alt="" className='logo-img'/></Link>
             
         </div>
+
+        
+        
+        
         <div className="options" style={{zIndex:999999}}>
-            <ul>
-                <li>
-                    
-                <div><span style={{fontSize:14}}>00</span> </div>
+            <ul className='options-list'>
+                <li id='home-id' >
+                <div className='num-remove'><span style={{fontSize:14}}>00</span> </div>
                     <Link to="/" onMouseOver={soundfun}>HOME</Link>
                 </li>
-                <li>
+                <li id='purpose-id'>
                     <div><span style={{fontSize:14}}>01</span> </div>
                     <Link to="/purpose" onMouseOver={soundfun}>PURPOSE</Link>
                 </li>
-                <li>
-                    <div><span style={{fontSize:14}}>02</span> </div>
-                    <Link to="/features" onMouseOver={soundfun}>Features</Link>
+                <li id='features-id' > 
+                    <div className='num-remove'><span style={{fontSize:14}}>02</span> </div>
+                    <Link to="/features" onMouseOver={soundfun}>FEATURES</Link>
                 </li>
-                <li>
-                    <div><span style={{fontSize:14}}>03</span> </div>
+                <li id='faq-id'>
+                    <div className='num-remove'><span style={{fontSize:14}}>03</span> </div>
                     <Link to="/faq" onMouseOver={soundfun}>FAQ</Link>
                 </li>
-                <li>
-                    <div><span style={{fontSize:14}}>04</span> </div>
+                <li id='contact-id'>
+                    <div className='num-remove'><span style={{fontSize:14}}>04</span> </div>
                     <Link to="/contactus" onMouseOver={soundfun}>CONTACT US</Link>
                 </li>
-                <li>
-                    <div ><span className='logged-in' style={{fontSize:14}}>05</span> </div>
+                {/* btn  */}
+                <li id="todo-id">
+                    <div className='num-remove'><span className='logged-in' style={{fontSize:14}}>05</span> </div>
                     <Link className='logged-in' to="/todo-space" onMouseOver={soundfun}>TODO SPACE</Link>
                 </li>
             </ul>
+            
         </div>
-        <div>
+        <div className='activity-btns'>
             <button className='logged-out' onClick={signInWithGoogle}>Sign In</button>
             <button className='logged-in' onClick={logout} >Log Out</button>
         </div>
+
+        <div className='activity-btns' id="mobile-btns">
+            <button className='logged-out' onClick={signInWithGoogle}>Sign In</button>
+            <button className='logged-in' onClick={logout} >Log Out</button>
+        </div>
+
+
+
+        
+
+
       </nav>
     </div>
   )

@@ -45,7 +45,7 @@ function App() {
     <div>
       {loading ? (
         <div>
-          <div class="loader" style={{position:"relative", top:400}}></div>
+          <div className="loader" style={{position:"relative", top:400}}></div>
         </div>
       ) : (
         <div>

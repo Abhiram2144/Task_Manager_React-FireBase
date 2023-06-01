@@ -24,6 +24,7 @@ li{
   justify-content: space-between;
   display: flex;
 }
+
 .logo-img{
   height: 2.5rem;
   margin-left: 1rem;
@@ -58,6 +59,77 @@ Link:hover{
 .logged-in{
   display:none;
 }
+
+
+#mobile-btns{
+  display: none;
+}
+
+
+
+
+/* 768px - 668px screens Tab */
+
+@media  (min-width: 668px) and (max-width: 768px)
+{
+  #purpose-id{
+    display: none;
+  }
+  #faq-id{
+    display: none;
+  }
+  .num-remove{
+    display: none;
+  }
+  .options{
+    padding-top: 10px;
+  }
+
+  #btn-id{
+    margin-right: 10px;
+  }
+
+}
+/* 668px -  425px screens Mobile  */
+
+@media  (min-width: 425px) and (max-width: 668px)
+{
+  .options #home-id{
+    display:none;
+  }
+  .options #purpose-id{
+    display:none;
+  }
+  .options #faq-id{
+    display:none;
+  }
+  .options #contact-id{
+    display:none;
+  }
+  .options #features-id{
+    display:none;
+  }
+  .num-remove{
+    display: none;
+  }
+
+  .options-list li{
+    font-size: 3rem;
+  }
+
+  .options ul li{
+    margin-top:15px;
+
+  }
+  
+
+
+}
+
+/* 425px > screens Small Mobile  */
+
+
+
 
 /* BUTTON CSS */
 
