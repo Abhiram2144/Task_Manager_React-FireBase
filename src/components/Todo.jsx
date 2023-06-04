@@ -68,7 +68,7 @@ function Todo() {
         </div>
         <div className="todo-space-heading">
           <h1 style={{color:"#DDBF1B"}}>
-            <span style={{ fontSize: 64 }}>Hello,</span> &nbsp;{name}
+            <span>Hello,</span> &nbsp;{name}
           </h1>
           <h1>Your ToDo-Space is here:</h1>
         </div>
@@ -86,7 +86,7 @@ function Todo() {
               autoComplete="off"
             />
           </div>
-          <div>
+          <div className="crud-btns">
             <button id="add-to-db" onClick={submitHandler}>
               Add
             </button>

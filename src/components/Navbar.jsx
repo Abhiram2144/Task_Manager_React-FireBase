@@ -102,7 +102,7 @@ auth.onAuthStateChanged(user=>{
                     <Link to="/" onMouseOver={soundfun}>HOME</Link>
                 </li>
                 <li id='purpose-id'>
-                    <div><span style={{fontSize:14}}>01</span> </div>
+                    <div className='num-remove'><span style={{fontSize:14}}>01</span> </div>
                     <Link to="/purpose" onMouseOver={soundfun}>PURPOSE</Link>
                 </li>
                 <li id='features-id' > 

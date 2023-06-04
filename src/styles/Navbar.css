@@ -66,11 +66,23 @@ Link:hover{
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 868px)
+{
+  .num-remove{
+    display: none;
+  }
+  .options{
+    padding-top: 10px;
+  }
+  .options #purpose-id{
+    display:none;
+  }
+}
 
 
 /* 768px - 668px screens Tab */
 
-@media  (min-width: 668px) and (max-width: 768px)
+@media  (min-width: 668px) and (max-width: 800px)
 {
   #purpose-id{
     display: none;
@@ -122,9 +134,9 @@ Link:hover{
 
   }
   
-
-
 }
+
+/* 425px > screens  */
 
 @media screen and (max-width: 425px){
   .logged-in{
@@ -139,8 +151,19 @@ Link:hover{
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px)
+{
+  .options #home-id{
+    display:none;
+  }
+}
 
-
+@media screen and (min-width: 768px) and (max-width: 1200px)
+{
+  .options #home-id{
+    display:none;
+  }
+}
 
 /* BUTTON CSS */
 
