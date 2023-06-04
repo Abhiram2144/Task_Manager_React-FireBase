@@ -126,7 +126,18 @@ Link:hover{
 
 }
 
-/* 425px > screens Small Mobile  */
+@media screen and (max-width: 425px){
+  .logged-in{
+    width: 120px;
+  }
+  .logged-out{
+    width: 120px;
+  }
+  .logo-img{
+    margin-left: 0;
+    padding: 0;
+  }
+}
 
 
 

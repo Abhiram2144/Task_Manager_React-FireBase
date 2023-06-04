@@ -46,7 +46,7 @@ function Purpose() {
             <div>
               <img src={Img2} alt="" className="purpose-img-2" />
             </div>
-            <div>
+            <div className="points-div">
               <h1 className="snd-heading">Because..</h1>
               <ul className="points-list">
                 <li className="point">Easy To Use</li>

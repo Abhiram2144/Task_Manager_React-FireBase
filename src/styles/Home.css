@@ -50,57 +50,105 @@
     text-indent: 120px;
 }
 
+/* Responsive Code */
 
-@media (max-width:767px){
-    
-    .description p:nth-child(3){
-        text-indent: 0px;
-        text-align: center;
-    }
-    .description p:nth-child(4){
-        text-indent: 0px;
-        text-align: center;
-    }
+/* 1440px > screen > 1024px Laptop Large  */
 
-    .head-title{
+@media screen and (min-width:1024px)
+{
+    .description{
+        width: 650px;
+    }
+}
+
+/* 1024px > screen > 768px Laptop Normal  */
+
+@media screen and (max-width:1024px) and (min-width: 768px)
+{
+    .num-00{
         font-size: 40px;
     }
-
     .description{
-        margin-top: 50px;
-        padding-left: 0px;
-    }   
-
-    .md-lg{
-        all:revert;
-        display: none;
-        
+        width:700px;
     }
 }
 
-@media screen and (max-width:420px){
- .head-title{
-    width: max-content;
- } 
-}
+/* 768px > screen > 668px Tablet  */
 
-@media (max-width:556px){
+@media screen and (max-width: 768px) and (min-width: 668px)
+{
     .head-title{
+        font-size: 3rem;
+    }
+    .num-00{
         font-size: 30px;
     }
+    .description p:nth-child(2){
+        display:none;
+    }
+    
+    .description p:nth-child(3){
+        display:none;
+    }
+    .description p:nth-child(4){
+        text-indent:0px; 
+    }
+}
 
+/* 668px > screen > 425px Mobile Large  */
+
+@media screen and (max-width: 668px) and (min-width: 425px)
+{
     .num-00{
-        font-size: 20px;
+        display:none;
+    }
+    .head-title{
+        font-size: 2rem;
+        color: #DDBF1B;
+    }
+    .description p:nth-child(2){
+        display:none;
+    }
+    
+    .description p:nth-child(3){
+        display:none;
+    }
+    .description p:nth-child(4){
+        text-indent:0px;
+    }
+    .description{
+        width: 300px;
+    }
+
+}
+
+/* 425px > screen Mobile Normal  */
+
+@media screen and (max-width:425px)
+{
+    .num-00{
+        display:none;
+    }
+    .head-title{
+        color: #DDBF1B;
+        font-size: 2rem;
+    }
+    .description p:nth-child(2){
+        display:none;
+    }
+    
+    .description p:nth-child(3){
+        display:none;
+    }
+    .options{
+        display:none;
+    }
+    .description p:nth-child(4){
+        text-indent:0px;
     }
 
     .description{
-        margin-top: 50px;
-        padding-left: 0px;
-    }   
-
-    .md-lg{
-        all:revert;
-        display: none;
-        
+        width: 300px;
     }
+    
 }

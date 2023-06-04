@@ -12,10 +12,10 @@ function Home() {
         </div>
 
         <div className='description'>
-            <p className='description-line md-lg'>Perfection needs Discipline. And Discipline needs?</p>
-            <p  className='description-line md-lg'>In order to be successfull, one should have discipline </p>
-            <p className='description-line'>Our goal is to provide you what it takes to be successfull</p>
-            <p className='description-line'>Todo Space is the one of the best Task Manager out there!</p>
+            <p className='description-line md-lg' id="fline">Perfection needs Discipline. And Discipline needs?</p>
+            <p  className='description-line md-lg' id="sline">In order to be successfull, one should have discipline </p>
+            <p className='description-line' id="tline">Our goal is to provide you what it takes to be successfull</p>
+            <p className='description-line' id="fourline">Todo Space is the one of the best Task Manager out there!</p>
         </div>
         </div>
        
